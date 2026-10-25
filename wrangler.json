@@ -1,9 +1,9 @@
 {
   "name": "hookedonblues",
   "compatibility_date": "2026-10-25",
-  "workers_dev": true ,
   "assets": {
     "directory": "./dist",
+    "html-handling": "drop-trailing-slash",
     "not_found_handling" : "single-page-application" 
   }
 }
