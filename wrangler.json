@@ -3,7 +3,7 @@
   "compatibility_date": "2026-10-25",
   "assets": {
     "directory": "./dist",
-    "html-handling": "drop-trailing-slash",
+    "html_handling": "drop-trailing-slash",
     "not_found_handling" : "single-page-application" 
   }
 }
