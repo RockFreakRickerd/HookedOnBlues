@@ -14,15 +14,13 @@ import { motion } from "framer-motion";
 // Reusable configurations matching your Linktree data
 const socialLinks = [
   { icon: <Globe className="w-5 h-5" />, href: "/", label: "Website" },
-  { icon: <FaSpotify className="w-5 h-5" />, href: "https://open.spotify.com/playlist/0cvI8VD7kGabhzDxlVKXxk?si=ceaf015b74c844cc", label: "Spotify" },
-  { icon: <FaInstagram className="w-5 h-5" />, href: "https://instagram.com/tributetogarymoore", label: "Instagram" },
-  { icon: <FaFacebook className="w-5 h-5" />, href: "https://facebook.com/share/1DuG2XCvSC/?mibextid=wwXlfr", label: "Facebook" },
-  { icon: <FaYoutube className="w-5 h-5" />, href: "https://youtube.com/@tributetogarymoore", label: "YouTube" },
+  { icon: <FaFacebook className="w-5 h-5" />, href: "https://www.facebook.com/p/Hooked-On-Blues-61564335914863/", label: "Facebook" },
+  { icon: <FaYoutube className="w-5 h-5" />, href: "https://www.youtube.com/watch?v=AdiU0PtkAjg", label: "YouTube" },
 ];
 
 const highLights = [
-  { icon: <Users className="w-5 h-5 text-primary" />, label: "Volledige Band", desc: "Power trio; Drums, Bas, gitaar & zang" },
-  { icon: <CheckCircle2 className="w-5 h-5 text-primary" />, label: "Setlist Lengte", desc: "Tot 2x 60 minuten aan Gary Moores discografie." },
+  { icon: <Users className="w-5 h-5 text-primary" />, label: "Volledige Band", desc: "4-mans band: Zang, 2 gitare, basgitaar en drums." },
+  { icon: <CheckCircle2 className="w-5 h-5 text-primary" />, label: "Setlist Lengte", desc: "Tot 2x 60 minuten aan verslaafde blues." },
   { icon: <FileText className="w-5 h-5 text-primary" />, label: "Eigen P.A.", desc: "In overleg beschikbaar voor kleinere locaties." },
 ];
 
@@ -34,7 +32,7 @@ export function VenueInfoPage() {
       <div className="fixed inset-0 z-0 pointer-events-none">
         <img
           src="/images/hero-bg.png"
-          alt=""
+          alt="band image"
           className="w-full h-full object-cover opacity-10"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/95 to-background" />
@@ -54,10 +52,10 @@ export function VenueInfoPage() {
             Electronic Press Kit (EPK)
           </span>
           <h1 className="font-display text-4xl md:text-5xl tracking-wider text-foreground">
-            TRIBUTE TO GARY MOORE
+            HOOKED ON BLUES
           </h1>
           <p className="text-muted-foreground text-base max-w-xl tracking-wide">
-            Gary Moore · Thin Lizzy · Scars · Greeny · Hendrix
+            Blues · Rock & Roll · BluesRock
           </p>
           <div className="w-40 h-px bg-primary mt-2" />
         </motion.div>
@@ -81,8 +79,8 @@ export function VenueInfoPage() {
               {/* Replace the URL below with your YouTube embedded link or native video address */}
               <iframe 
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/IIgRlcG0_jg?si=ECfh0KApL4F_SOJr&amp;start=26" // Template placeholder link
-                title="Tribute to Gary Moore Live"
+                src="https://www.youtube.com/embed/AdiU0PtkAjg?si=BUrmifzblJUpEr43"
+                title="Hooked On Blues @ Flakkeese Dagen"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
               ></iframe>
@@ -120,7 +118,7 @@ export function VenueInfoPage() {
               </div>
 
               {/* Downloads: Tech Rider & Presskit assets */}
-              <div className="flex flex-col sm:flex-row gap-3 pt-2">
+              {/*<div className="flex flex-col sm:flex-row gap-3 pt-2">
                 <a 
                   href="/Technische Rider Tribute To Gary Moore.pdf" // Placeholder asset path
                   download 
@@ -128,7 +126,7 @@ export function VenueInfoPage() {
                 >
                   <Download className="w-4 h-4 text-primary" /> Technical Rider
                 </a>
-              </div>
+              </div>*/}
             </div>
           </motion.div>
         </div>
@@ -143,15 +141,15 @@ export function VenueInfoPage() {
           <div className="md:w-1/3 flex flex-col gap-3">
             <h3 className="text-lg font-display tracking-wide text-primary">Over de Show</h3>
             <p className="text-xs text-muted-foreground leading-relaxed">
-              Een energieke ode aan de legendarische Ierse gitaargrootmeester. Wij brengen de emotie en pure kracht van Gary Moore in power trio formatie.
+              Een show vol verslavende blues liedjes die de dansvloer laat oplaaien.
             </p>
           </div>
           <div className="md:w-2/3 text-sm text-muted-foreground space-y-4 leading-relaxed">
             <p>
-              Van de meeslepende blues-era met parels zoals <span className="text-foreground font-medium">"Still Got The Blues"</span> en <span className="text-foreground font-medium">"Parisienne Walkways"</span> tot het stevigere rockwerk uit zijn tijd met <span className="text-foreground font-medium">Thin Lizzy</span>. Onze performance staat garant voor jankende gitaarsolo's, herkenbare arrangementen en een ijzersterke ritmesectie.
+              De blues kan vreselijk dansbaar zijn en deze band laat dit dan ook graag merken en danst vrolijk met het publiek mee.
             </p>
             <p>
-              Perfect geschikt voor poppodia, bluescafés, en classic rock festivals die op zoek zijn naar een authentieke, kwalitatieve tribute act die het publiek weet te raken.
+              Perfect geschikt voor poppodia, bluescafés, en classic rock festivals die op zoek zijn naar een authentieke, kwalitatieve blues act die het publiek laat bewegen.
             </p>
           </div>
         </motion.div>
@@ -189,13 +187,13 @@ export function VenueInfoPage() {
           {/* Quick Contact Action Button / Mail Router */}
           <div className="flex flex-col gap-3 items-stretch md:items-end w-full">
             <a
-              href="mailto:booking@tributetogarymoore.nl?subject=Boekingsaanvraag%20Tribute%20to%20Gary%20Moore"
+              href="mailto:hookedonbluesnl@gmail.com?subject=Boekingsaanvraag%20Hooked%20on%20Blues"
               className="w-full md:w-auto inline-flex items-center justify-center gap-3 bg-background text-foreground hover:bg-background/90 font-display tracking-wide text-sm px-6 py-4 rounded-xl shadow-md transition-transform duration-150 active:scale-95"
             >
               <Mail className="w-5 h-5 text-primary" /> Stuur een E-mail
             </a>
             <span className="text-xs text-primary-foreground/60 text-center md:text-right w-full">
-              Of mail rechtstreeks naar: <span className="underline">booking@tributetogarymoore.nl</span>
+              Of mail rechtstreeks naar: <span className="underline">hookedonbluesnl@gmail.com</span>
             </span>
           </div>
         </motion.div>
@@ -207,7 +205,7 @@ export function VenueInfoPage() {
           transition={{ delay: 0.6 }}
           className="text-muted-foreground text-xs text-center mt-4"
         >
-          © {new Date().getFullYear()} Tribute to Gary Moore. All assets & riders up-to-date.
+          © {new Date().getFullYear()} Hooked on Blues. All assets & riders up-to-date.
         </motion.p>
       </div>
     </div>

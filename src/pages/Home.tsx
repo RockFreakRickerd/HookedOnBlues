@@ -27,7 +27,7 @@ export default function Home() {
 
         {/* Desktop Navigation */}
         <div className="hidden md:flex gap-6 items-center text-sm font-display tracking-widest">
-          <a href="#about" className="hover:text-primary transition-colors uppercase">Inspiratie</a>
+          {/*<a href="#about" className="hover:text-primary transition-colors uppercase">Inspiratie</a>*/}
           <a href="#tour" className="hover:text-primary transition-colors uppercase">Speeldatums</a>
           <a href="/fotos" className="hover:text-primary transition-colors uppercase">Foto's</a>
           <a href="#contact" className="hover:text-primary transition-colors uppercase">Contact</a>
@@ -40,9 +40,9 @@ export default function Home() {
 
         {/* Mobile Fast-Track Navigation (Always Visible Actions for Bookers) */}
         <div className="flex md:hidden items-center gap-4 text-xs font-display tracking-wider">
-          <a href="#about" className="hover:text-primary transition-colors uppercase text-[11px]">
+          {/*<a href="#about" className="hover:text-primary transition-colors uppercase text-[11px]">
             Inspiratie
-          </a>
+          </a>*/}
           <a href="#tour" className="hover:text-primary transition-colors uppercase text-[11px]">
             Datums
           </a>
@@ -68,8 +68,8 @@ export default function Home() {
             transition={{ duration: 0.2 }}
             className="fixed inset-x-0 top-[72px] bg-background/95 backdrop-blur-lg z-40 border-b border-border/40 py-8 px-6 flex flex-col gap-6 font-display tracking-widest uppercase text-center shadow-xl md:hidden"
           >
-            <a href="#about" onClick={() => setMobileMenuOpen(false)} className="text-lg py-2 hover:text-primary transition-colors">Inspiratie</a>
-            <a href="#music" onClick={() => setMobileMenuOpen(false)} className="text-lg py-2 hover:text-primary transition-colors">De periodes</a>
+            {/*<a href="#about" onClick={() => setMobileMenuOpen(false)} className="text-lg py-2 hover:text-primary transition-colors">Inspiratie</a>
+            <a href="#music" onClick={() => setMobileMenuOpen(false)} className="text-lg py-2 hover:text-primary transition-colors">De periodes</a>*/}
             <a href="#trio" onClick={() => setMobileMenuOpen(false)} className="text-lg py-2 hover:text-primary transition-colors">De power trio</a>
             <a href="#tour" onClick={() => setMobileMenuOpen(false)} className="text-lg py-2 hover:text-primary transition-colors">Speeldatums</a>
             <a href="/fotos" onClick={() => setMobileMenuOpen(false)} className="hover:text-primary transition-colors uppercase">Foto's</a>
@@ -105,14 +105,14 @@ export default function Home() {
             transition={{ duration: 1, delay: 0.2 }}
           >
             <h2 className="font-accent text-2xl md:text-5xl text-secondary mb-4 rotate-[-3deg]">
-              Power trio voor een legende.
+              De bluesverslaafde band
             </h2>
             <h1 className="font-display text-5xl md:text-8xl lg:text-9xl tracking-tighter leading-none mb-6 drop-shadow-2xl text-transparent bg-clip-text bg-gradient-to-b from-foreground to-foreground/70">
-              TRIBUTE TO <br />
-              GARY MOORE
+              Hooked on <br />
+              Blues
             </h1>
             <p className="font-sans text-base md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 leading-relaxed">
-              Gary Moore's legendarishe muziek, teruggebracht naar absolute basis.
+              Band die verslaafd is aan blues.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <a href="#tour" className="w-full sm:w-auto">
@@ -142,7 +142,7 @@ export default function Home() {
       </section>
 
       {/* 2. The Mission */}
-      <section
+      {/*<section
         id="about"
         className="py-24 md:py-32 px-6 relative bg-background"
       >
@@ -193,17 +193,17 @@ export default function Home() {
             />
             <div className="absolute -bottom-10 -left-4 sm:--left-10 z-20 w-40 sm:w-50 h-20 sm:h-23 bg-background flex items-center justify-center p-4 border border-foreground/10">
               <img
-                src="/Gary_Moore_tribute_bgremoved.png"
+                src="/HOB_logo-removebg-preview.png"
                 alt="Still Got the Blues Logo"
                 className="w-full h-full opacity-50 object-contain"
               />
             </div>
           </motion.div>
         </div>
-      </section>
+      </section>*/}
 
       {/* 4. The Two Eras */}
-      <section
+      {/*<section
         id="music"
         className="py-24 md:py-32 bg-background relative overflow-hidden"
       >
@@ -274,7 +274,7 @@ export default function Home() {
             ))}
           </div>
         </div>
-      </section>
+      </section>*/}
 
       {/* 5. The Power Trio */}
       <section id="trio" className="py-24 md:py-32 px-6 border-t border-border">
@@ -282,33 +282,39 @@ export default function Home() {
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-16 gap-6">
             <div>
               <h2 className="font-display text-4xl md:text-7xl leading-none uppercase">
-                Het Power Trio
+                De verslaafde bluesband
               </h2>
               <div className="w-20 h-1 bg-primary mt-6" />
             </div>
             <p className="text-muted-foreground max-w-md text-left md:text-right text-base md:text-lg">
-              Ruw, onbewerkt en gevaarlijk. Het klassieke format dat nergens voor onderduikt.
+              Blues verslaafde band die dit ook overbrengt aan het publiek.
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                name: "Bas",
+                name: "Martijn",
                 role: "Gitarist en zanger",
-                desc: "Spelend op een vintage Les Paul of Stratocaster, brengend de vuur en passie van de Belfast-legende tot leven.",
+                desc: "Spelend op een vintage Les Paul.",
+                image: "/Bas.jpeg",
+              },
+              {
+                name: "Leen",
+                role: "Gitarist",
+                desc: "Spelend op een Stratocaster.",
                 image: "/Bas.jpeg",
               },
               {
                 name: "Rick",
                 role: "Bassist",
-                desc: "Een Rickenbacker of Stingray in hand, het trio verankeren met krachtige, zingende fundament.",
+                desc: "Spelend op een P'51.",
                 image: "/Rick.jpeg",
               },
               {
-                name: "Jeroen",
+                name: "Martijn",
                 role: "Drumer",
-                desc: "De motor achter het trio met de kracht, precisie en swing van een echte rock-'n-roll machine.",
+                desc: "Spelend op een yamaha kit.",
                 image: "/HC_Jeroen.jpg",
               },
             ].map((member, i) => (
@@ -358,28 +364,28 @@ export default function Home() {
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-display text-4xl md:text-6xl mb-4 uppercase">
-              Live on Stage
+              Live optredens
             </h2>
             <p className="font-accent text-xl md:text-2xl text-primary">
-              Catch the tribute in action
+              Kom de band bewonderen
             </p>
           </div>
 
           <div className="space-y-4">
             {[
               {
-                date: "28 Jun",
-                venue: "Gluren bij de buren",
-                city: "Oude Tonge, NL",
+                date: "24 Apr",
+                venue: "Oranjepop 2027",
+                city: "Dirksland, NL",
                 status: "Meer info",
-                url: "https://glurenbijdeburen.nl/nl/programma/goeree-overflakkee#1657gary-moore",
+                url: "https://oranjepopdirksland.nl/#ticket",
               },
               {
-                date: "3 Jul",
-                venue: "Open podium Havenconcert",
-                city: "Goedereede, NL",
+                date: "TBD",
+                venue: "Oldtimersdag Oude tonge",
+                city: "Oude Tonge, NL",
                 status: "Meer info",
-                url: "https://havenconcert.nl/event/bas-broeders/",
+                url: "https://oranjepopdirksland.nl/#ticket",
               },
             ].map((show, i) => (
               <motion.div
@@ -432,10 +438,10 @@ export default function Home() {
         <div className="max-w-3xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="font-display text-4xl md:text-6xl mb-4 uppercase">
-              Boek het Trio
+              Boek de blues band.
             </h2>
             <p className="font-accent text-3xl md:text-2xl text-primary">
-              Haal de rauwe energie live-energie van deze power trio.
+              Raak net zo verslaafd aan blues als deze band.
             </p>
           </div>
           
@@ -464,7 +470,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col gap-2">
                 <label className="font-display text-xs uppercase tracking-widest text-muted-foreground">
-                  Email Adres
+                  Email Address
                 </label>
                 <input
                   type="email"
@@ -576,15 +582,15 @@ export default function Home() {
             {/* Logo + tagline */}
             <div className="flex flex-col items-center md:items-start gap-4">
               <img
-                src="/Gary_Moore_tribute_bgremoved.png"
-                alt="Tribute to Gary Moore Logo"
+                src="/HOB_logo-removebg-preview.png"
+                alt="Hooked on blues"
                 className="w-44 h-20 md:w-50 md:h-23 object-contain opacity-80"
               />
               <span className="font-display text-base tracking-widest uppercase text-foreground">
-                Tribute to Gary Moore
+                Hooked on blues
               </span>
               <p className="font-accent text-lg text-primary">
-                Three players. One legend.
+                Verslaafd aan de blues.
               </p>
             </div>
 
@@ -594,8 +600,8 @@ export default function Home() {
                 Navigate
               </h4>
               {[
-                { label: "Over ons", href: "#about" },
-                { label: "De periodes", href: "#music" },
+                {/*{ label: "Over ons", href: "#about" },
+                { label: "De periodes", href: "#music" },*/}
                 { label: "De power trio", href: "#trio" },
                 { label: "Speeldatums", href: "#tour" },
                 { label: "Boeken", href: "#boeking" },
@@ -622,9 +628,9 @@ export default function Home() {
                 <span className="text-xs text-muted-foreground uppercase tracking-widest">
                   Email
                 </span>
-                <a href="mailto:booking@tributetogarymoore.nl" 
+                <a href="mailto:hookedonbluesnl@gmail.com" 
                    className="font-display text-sm tracking-wider text-foreground hover:text-primary transition-colors">
-                  booking@tributetogarymoore.nl
+                  hookedonbluesnl@gmail.com
                 </a>
               </div>
               <div className="flex flex-col gap-1 mt-2">
@@ -633,7 +639,7 @@ export default function Home() {
                 </span>
                 <a href="tel:+31636464141" 
                    className="font-display text-sm tracking-wider text-foreground hover:text-primary transition-colors">
-                  +31 6 3646 4141
+                  TBD
                 </a>
               </div>
             </div>
@@ -641,7 +647,7 @@ export default function Home() {
 
           <div className="border-t border-border/50 pt-8 text-center">
             <div className="font-display tracking-widest uppercase text-muted-foreground text-xs">
-              © {new Date().getFullYear()} Tribute to Gary Moore. All Rights Reserved.
+              © {new Date().getFullYear()} Hooked on Blues. All Rights Reserved.
             </div>
           </div>
         </div>
