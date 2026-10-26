@@ -92,7 +92,7 @@ export default function Home() {
         >
           <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/60 to-background z-10" />
           <img
-            src="/Hero_TTGM.jpg"
+            src="/HOBLive.png"
             alt="Band silhouette on stage"
             className="w-full h-full object-cover object-center"
           />
