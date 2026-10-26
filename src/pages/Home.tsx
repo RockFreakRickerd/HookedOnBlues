@@ -600,8 +600,6 @@ export default function Home() {
                 Navigate
               </h4>
               {[
-                {/*{ label: "Over ons", href: "#about" },
-                { label: "De periodes", href: "#music" },*/}
                 { label: "De power trio", href: "#trio" },
                 { label: "Speeldatums", href: "#tour" },
                 { label: "Boeken", href: "#boeking" },
