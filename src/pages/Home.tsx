@@ -297,13 +297,13 @@ export default function Home() {
                 name: "Martijn",
                 role: "Gitarist en zanger",
                 desc: "Spelend op een vintage Les Paul.",
-                image: "/Bas.jpeg",
+                image: "/MartijnG.jpg",
               },
               {
                 name: "Leen",
                 role: "Gitarist",
                 desc: "Spelend op een Stratocaster.",
-                image: "/Bas.jpeg",
+                image: "/Leen.jpg",
               },
               {
                 name: "Rick",
@@ -315,7 +315,7 @@ export default function Home() {
                 name: "Martijn",
                 role: "Drumer",
                 desc: "Spelend op een yamaha kit.",
-                image: "/HC_Jeroen.jpg",
+                image: "/MartijnD.jpg",
               },
             ].map((member, i) => (
               <motion.div
