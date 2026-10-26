@@ -123,7 +123,7 @@ export default function Home() {
                   Zie speeldatums
                 </Button>
               </a>
-              <a href="#music" className="w-full sm:w-auto">
+              {/*<a href="#music" className="w-full sm:w-auto">
                 <Button
                   size="lg"
                   variant="outline"
@@ -131,7 +131,7 @@ export default function Home() {
                 >
                   De perioden
                 </Button>
-              </a>
+              </a>*/}
             </div>
           </motion.div>
         </div>
@@ -291,7 +291,7 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {[
               {
                 name: "Martijn",
