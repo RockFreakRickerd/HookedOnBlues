@@ -18,7 +18,7 @@ export default function Home() {
         <div className="flex items-center gap-3">
           <a href="/">
             <img
-              src="/Gary_Moore_tribute_bgremoved.png"
+              src="/HOB_logo-removebg-preview.png"
               alt="Still Got the Blues Logo"
               className="w-28 h-12 md:w-35 md:h-15 object-contain"
             />
