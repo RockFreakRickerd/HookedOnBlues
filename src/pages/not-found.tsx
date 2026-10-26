@@ -57,10 +57,10 @@ export function NotFoundPage() {
             Error 404
           </span>
           <h1 className="font-display text-4xl md:text-5xl tracking-wider text-foreground">
-            TRACK NIET GEVONDEN
+            Te ver gebluest
           </h1>
           <p className="text-muted-foreground text-sm max-w-md tracking-wide leading-relaxed">
-            De pagina die je zoekt heeft de setlist verlaten. Waarschijnlijk is de link veranderd of staat de solo in de verkeerde toonsoort.
+            De pagina die je zoekt zit buiten de verslaving helaas.
           </p>
           <div className="w-24 h-px bg-primary mt-4" />
         </motion.div>
@@ -73,7 +73,7 @@ export function NotFoundPage() {
           className="w-full bg-card/50 border border-border rounded-2xl p-6 md:p-8 flex flex-col sm:flex-row items-center justify-between gap-6"
         >
           <div className="text-center sm:text-left">
-            <h3 className="text-sm font-medium text-foreground">Terug naar de show?</h3>
+            <h3 className="text-sm font-medium text-foreground">Terug naar de verslaving?</h3>
             <p className="text-xs text-muted-foreground mt-1">Keer direct veilig terug naar onze officiële homepage.</p>
           </div>
           
@@ -108,7 +108,7 @@ export function NotFoundPage() {
           </div>
           
           <p className="text-muted-foreground/50 text-[11px]">
-            © {new Date().getFullYear()} Tribute to Gary Moore.
+            © {new Date().getFullYear()} Hooked on Blues.
           </p>
         </motion.div>
 

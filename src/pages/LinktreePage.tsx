@@ -12,11 +12,11 @@ const links = [
   {
     icon: <Globe className="w-5 h-5" />,
     label: "Onze Website",
-    sub: "tributetogarymoore.nl",
+    sub: "hookedonblues.nl",
     href: "/",
     primary: true,
   },
-  {
+  {/*{
     icon: <Music2 className="w-5 h-5" />,
     label: "Onze favoriete liedjes",
     sub: "A tribute to gary moore",
@@ -29,19 +29,19 @@ const links = [
     sub: "@tributetogarymoore",
     href: "https://instagram.com/tributetogarymoore",
     external: true,
-  },
+  },*/}
   {
     icon: <FaFacebook className="w-5 h-5" />,
     label: "Facebook",
-    sub: "Tribute to gary moore",
-    href: "https://facebook.com/share/1DuG2XCvSC/?mibextid=wwXlfr",
+    sub: "Hooked on Blues",
+    href: "https://www.facebook.com/p/Hooked-On-Blues-61564335914863/",
     external: true,
   },
   {
     icon: <FaYoutube className="w-5 h-5" />,
     label: "YouTube",
-    sub: "Havenconcert",
-    href: "https://www.youtube.com/watch?v=IIgRlcG0_jg;start=26",
+    sub: "Flakkeese Dagen 2025",
+    href: "https://www.youtube.com/watch?v=AdiU0PtkAjg",
     external: true,
   },
   {
@@ -74,10 +74,10 @@ export function LinktreePage() {
           className="flex flex-col items-center gap-4"
         >
           <span class="font-display text-3xl tracking-wider text-primary">
-            TRIBUTE TO GARY MOORE
+            Hooked on Blues
           </span>
           <p className="text-muted-foreground text-sm text-center tracking-wide">
-            Gary moore · Rock · Blues · Heroes
+            Blues · Rock & Roll · BluesRock
           </p>
           <div className="w-30 h-px bg-primary" />
         </motion.div>
@@ -136,7 +136,7 @@ export function LinktreePage() {
           transition={{ delay: 0.9 }}
           className="text-muted-foreground text-xs mt-4 text-center"
         >
-          © {new Date().getFullYear()} Tribute to Gary Moore.
+          © {new Date().getFullYear()} Hooked on Blues.
         </motion.p>
       </div>
     </div>
