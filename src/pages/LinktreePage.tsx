@@ -29,7 +29,7 @@ const links = [
     sub: "@tributetogarymoore",
     href: "https://instagram.com/tributetogarymoore",
     external: true,
-  },*/}
+  },*/},
   {
     icon: <FaFacebook className="w-5 h-5" />,
     label: "Facebook",
