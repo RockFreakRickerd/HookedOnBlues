@@ -8,6 +8,7 @@ import LinktreePage from "@/pages/LinktreePage";
 import ImagesPage from "@/pages/images";
 import VenueInfoPage from "@/pages/EPK";
 import ThankYouPage from "@/pages/ThankYou";
+import testPage from "@/pages/testpage";
 import { useEffect } from "react";
 
 const queryClient = new QueryClient();
@@ -22,6 +23,7 @@ function Router() {
       <Route path="/images" component={ImagesPage} />
       <Route path="/fotos" component={ImagesPage} />
       <Route path="/thankyou" component={ThankYouPage} />
+      <Route path="/test" component={testPage} />
       <Route component={NotFound} />
     </Switch>
   );
